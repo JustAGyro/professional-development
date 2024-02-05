@@ -15,6 +15,11 @@ Disclaimer: I have curated this list based upon my goals + where I see my career
 - Box
 - Gainsight
 - Stripe
+- RocketMoney
+- Opus
+- Materia
+- Sleeper
+- Truewind
 
 # Companies applied to
 
