@@ -19,7 +19,7 @@ Disclaimer: I have curated this list based upon my goals + where I see my career
 - Opus
 - Materia
 - Sleeper
-- Truewind
+- Truewindx
 
 # Companies applied to
 
