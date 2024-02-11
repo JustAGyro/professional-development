@@ -20,7 +20,14 @@ Disclaimer: I have curated this list based upon my goals + where I see my career
 - Materia
 - Sleeper
 - Truewindx
+- Astronaut.chat
+- TrustWorthy
+- CivilGrid
 
 # Companies applied to
 
-- None so far
+- TrustWorthy
+- Sleeper
+- Astronaut.chat
+- CivilGrid
+- Coastpay
