@@ -19,3 +19,20 @@ const maxValue = (nums) => {
 
   return currentHighest;
 };
+
+const isPrime = (n) => {
+  // todo
+  if (n === 2) {
+    return true;
+  } else if (n === 1) {
+    return false;
+  }
+  for (let i = 2; i < n; i++) {
+    let num = i;
+    if (n % num === 0) {
+      return false;
+    }
+  }
+
+  return true;
+};
