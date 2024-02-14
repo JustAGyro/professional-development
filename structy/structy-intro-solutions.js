@@ -36,3 +36,30 @@ const isPrime = (n) => {
 
   return true;
 };
+
+const uncompress = (s) => {
+  const numbers = '0123456789';
+  let i = 0;
+  let j = 0;
+  let num = '';
+  let newString = '';
+  let uncompressed = '';
+
+  while (j < s.length) {
+    let cIndex = s[j];
+
+    if (numbers.includes(cIndex)) {
+      num += cIndex;
+    }
+
+    if (!numbers.includes(cIndex)) {
+      newString = cIndex.repeat(num);
+      uncompressed += newString;
+      i = j;
+      num = '';
+    }
+
+    j++;
+  }
+  return uncompressed;
+};
