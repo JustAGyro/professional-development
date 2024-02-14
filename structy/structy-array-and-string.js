@@ -129,3 +129,18 @@ const pairSum = (numbers, targetSum) => {
     }
   }
 };
+
+//O(n)
+const pairSum2 = (numbers, targetSum) => {
+  // todo
+  let checked = {};
+
+  for (let i = 0; i < numbers.length; i++) {
+    let current = numbers[i];
+    let complement = targetSum - current;
+    if (complement in checked) {
+      return [i, checked[complement]];
+    }
+    checked[current] = i;
+  }
+};
