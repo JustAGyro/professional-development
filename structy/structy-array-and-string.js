@@ -90,3 +90,29 @@ const anagrams = (s1, s2) => {
 
   return true;
 };
+
+const mostFrequentChar = (s) => {
+  // todo
+  let count = {};
+  let letter = '';
+  let max = 0;
+
+  for (let i = 0; i < s.length; i++) {
+    let index = s[i];
+
+    if (!count[index]) {
+      count[index] = 1;
+    } else if (count[index]) {
+      count[index] += 1;
+    }
+  }
+
+  for (key in count) {
+    if (count[key] > max) {
+      max = count[key];
+      letter = key;
+    }
+  }
+
+  return letter;
+};
