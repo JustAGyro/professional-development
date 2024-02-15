@@ -176,3 +176,23 @@ const intersection = (a, b) => {
 
   return d;
 };
+
+const fiveSort = (nums) => {
+  // todo
+  let i = 0;
+  let j = nums.length - 1;
+
+  while (i < j) {
+    if (nums[i] === 5) {
+      nums.splice(i, 1);
+      nums.push(5);
+    }
+
+    if (nums[j] === 5) {
+      nums.splice(j, 1);
+      nums.push(5);
+    }
+    j--;
+  }
+  return nums;
+};
