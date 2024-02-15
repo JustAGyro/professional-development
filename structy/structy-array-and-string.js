@@ -144,3 +144,19 @@ const pairSum2 = (numbers, targetSum) => {
     checked[current] = i;
   }
 };
+
+const pairProduct = (numbers, targetProduct) => {
+  // todo
+  let checked = {};
+
+  for (let i = 0; i < numbers.length; i++) {
+    let num = numbers[i];
+    let comp = targetProduct / num;
+
+    if (comp in checked) {
+      return [i, checked[comp]];
+    }
+
+    checked[num] = i;
+  }
+};
