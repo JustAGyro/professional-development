@@ -160,3 +160,19 @@ const pairProduct = (numbers, targetProduct) => {
     checked[num] = i;
   }
 };
+
+const intersection = (a, b) => {
+  // todo
+
+  const c = new Set(a);
+  const d = [];
+
+  for (let j = 0; j < b.length; j++) {
+    let num = b[j];
+    if (c.has(num)) {
+      d.push(num);
+    }
+  }
+
+  return d;
+};
