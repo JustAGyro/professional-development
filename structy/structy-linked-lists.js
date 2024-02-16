@@ -9,3 +9,19 @@ const linkedListValues = (head) => {
   }
   return result;
 };
+
+const sumList = (head) => {
+  // todo
+  let sum = 0;
+  let current = head;
+
+  while (current != null) {
+    sum += current.val;
+    current = current.next;
+  }
+  return sum;
+};
+
+module.exports = {
+  sumList,
+};
