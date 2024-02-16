@@ -25,3 +25,11 @@ const sumList = (head) => {
 module.exports = {
   sumList,
 };
+
+//recursive
+const linkedListFind = (head, target) => {
+  // recursive
+  if (head === null) return false;
+  if (head.val === target) return true;
+  return linkedListFind(head.next, target);
+};
