@@ -44,3 +44,15 @@ const linkedListFind2 = (head, target) => {
   }
   return false;
 };
+
+const getNodeValue = (head, index) => {
+  // todo
+  let current = head;
+  let counter = 0;
+  while (current != null) {
+    if (index === counter) return current.val;
+    current = current.next;
+    counter++;
+  }
+  return current;
+};
