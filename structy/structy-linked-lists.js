@@ -137,3 +137,34 @@ const isUnivalueList = (head) => {
 
   return true;
 };
+
+const longestStreak = (head) => {
+  // todo
+  let count = 0;
+  let highestCount = 0;
+
+  if (head === null) return count;
+  let current = head;
+  let value = head.val;
+
+  while (current != null) {
+    if (value === current.val) {
+      count++;
+      current = current.next;
+    } else {
+      value = current.val;
+      if (count > highestCount) {
+        highestCount = count;
+        count = 0;
+        current = current.next;
+      } else {
+        count = 0;
+        current = current.next;
+      }
+      count++;
+    }
+    if (current !== null) console.log('current.val', current.val);
+  }
+  if (count > highestCount) return count;
+  return highestCount;
+};
