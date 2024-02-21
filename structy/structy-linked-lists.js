@@ -168,3 +168,26 @@ const longestStreak = (head) => {
   if (count > highestCount) return count;
   return highestCount;
 };
+
+const removeNode = (head, targetVal) => {
+  // todo
+
+  if (head.val === targetVal) return head.next;
+
+  let current = head;
+  let prev = null;
+
+  while (current != null) {
+    if (current.val === targetVal) {
+      prev.next = current.next;
+      break;
+    }
+
+    prev = current;
+    current = current.next;
+  }
+
+  console.log(head);
+
+  return head;
+};
