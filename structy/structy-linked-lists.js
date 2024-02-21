@@ -191,3 +191,34 @@ const removeNode = (head, targetVal) => {
 
   return head;
 };
+
+const insertNode = (head, value, index) => {
+  // todo
+
+  if (index === 0) {
+    let nullNode = new Node(value);
+    nullNode.next = head;
+
+    return nullNode;
+  }
+
+  let current = head;
+  let prev = null;
+  let count = 0;
+  let newNode = new Node(value);
+
+  while (count <= index) {
+    console.log(count);
+    if (count === index) {
+      prev.next = newNode;
+      newNode.next = current;
+      break;
+    }
+
+    prev = current;
+    current = current.next;
+    count++;
+  }
+
+  return head;
+};
