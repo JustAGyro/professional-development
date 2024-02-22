@@ -222,3 +222,15 @@ const insertNode = (head, value, index) => {
 
   return head;
 };
+
+const createLinkedList = (values) => {
+  let head = new Node(0);
+  let tail = head;
+
+  for (let i = 0; i < values.length; i++) {
+    tail.next = new Node(values[i]);
+    tail = tail.next;
+  }
+
+  return head.next;
+};
