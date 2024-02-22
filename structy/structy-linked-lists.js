@@ -234,3 +234,36 @@ const createLinkedList = (values) => {
 
   return head.next;
 };
+
+const addLists = (head1, head2) => {
+  let dummyHead = new Node(0);
+  let tail = dummyHead;
+
+  let current1 = head1;
+  let current2 = head2;
+
+  let num1 = [];
+  let num2 = [];
+
+  while (current1 != null) {
+    num1.unshift(current1.val);
+    current1 = current1.next;
+  }
+
+  while (current2 != null) {
+    num2.unshift(current2.val);
+    current2 = current2.next;
+  }
+
+  let sum = Number(num1.join('')) + Number(num2.join(''));
+  let arraySum = sum.toString().split('');
+
+  for (let i = arraySum.length - 1; i >= 0; i--) {
+    let numNode = Number(arraySum[i]);
+
+    tail.next = new Node(numNode);
+    tail = tail.next;
+  }
+
+  return dummyHead.next;
+};
