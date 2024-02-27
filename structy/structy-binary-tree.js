@@ -18,3 +18,11 @@ const depthFirstValues = (root) => {
 
   return result;
 };
+
+const depthFirstValues1 = (root) => {
+  // todo
+  if (root === null) return [];
+  const leftValues = depthFirstValues(root.left);
+  const rightValues = depthFirstValues(root.right);
+  return [root.val, ...leftValues, ...rightValues];
+};
