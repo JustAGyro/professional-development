@@ -26,3 +26,20 @@ const depthFirstValues1 = (root) => {
   const rightValues = depthFirstValues(root.right);
   return [root.val, ...leftValues, ...rightValues];
 };
+
+const breadthFirstValues = (root) => {
+  // todo
+  if (root === null) return [];
+  let result = [];
+  let queue = [root];
+
+  while (queue.length > 0) {
+    const current = queue.pop();
+    result.push(current.val);
+
+    if (current.left) queue.unshift(current.left);
+    if (current.right) queue.unshift(current.right);
+  }
+
+  return result;
+};
