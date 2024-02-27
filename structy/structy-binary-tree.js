@@ -69,3 +69,19 @@ const treeSumDepthRecursive = (root, sum = 0) => {
   sum += root.val;
   return sum + leftValues + rightValues;
 };
+
+const treeSum = (root) => {
+  // todo
+  if (root === null) return 0;
+  let stack = [root];
+  let sum = 0;
+
+  while (stack.length > 0) {
+    const current = stack.pop();
+    if (current.left) stack.unshift(current.left);
+    if (current.right) stack.unshift(current.right);
+
+    sum += current.val;
+  }
+  return sum;
+};
