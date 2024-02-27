@@ -60,3 +60,12 @@ const treeSumDepthIterative = (root) => {
   }
   return sum;
 };
+
+const treeSumDepthRecursive = (root, sum = 0) => {
+  // todo
+  if (root === null) return 0;
+  const leftValues = treeSum(root.left, sum);
+  const rightValues = treeSum(root.right, sum);
+  sum += root.val;
+  return sum + leftValues + rightValues;
+};
