@@ -120,3 +120,13 @@ const treeMinValue = (root) => {
 
   return min;
 };
+
+const maxPathSum = (root) => {
+  // todo
+  if (root === null) return -Infinity;
+  if (root.left === null && root.right === null) return root.val;
+
+  const maxChildSum = Math.max(maxPathSum(root.left), maxPathSum(root.right));
+
+  return root.val + maxChildSum;
+};
