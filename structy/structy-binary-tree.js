@@ -85,3 +85,21 @@ const treeSum = (root) => {
   }
   return sum;
 };
+
+const treeIncludes = (root, target) => {
+  // todo
+  let queue = [root];
+
+  if (root === null) return false;
+
+  while (queue.length > 0) {
+    const current = queue.pop();
+
+    if (current.left) queue.unshift(current.left);
+    if (current.right) queue.unshift(current.right);
+
+    if (current.val === target) return true;
+  }
+
+  return false;
+};
