@@ -150,21 +150,28 @@ const pathFinder = (root, target) => {
 };
 
 const treeValueCount = (root, target) => {
-    // todo
-    if (root === null) return 0
+  // todo
+  if (root === null) return 0;
 
-    let stack = [root]
-    let count = 0;
+  let stack = [root];
+  let count = 0;
 
-    while (stack.length > 0) {
-      const current = stack.pop()
-      if (current.val === target) count++
+  while (stack.length > 0) {
+    const current = stack.pop();
+    if (current.val === target) count++;
 
-      if (current.left) stack.push(current.left)
-      if (current.right) stack.push(current.right)
+    if (current.left) stack.push(current.left);
+    if (current.right) stack.push(current.right);
+  }
 
-    }
+  return count;
+};
 
-    return count
+const howHigh = (node) => {
+  if (node === null) return -1;
 
-  };
+  const leftPath = howHigh(node.left);
+  const rightPath = howHigh(node.right);
+
+  return 1 + Math.max(leftPath, rightPath);
+};
