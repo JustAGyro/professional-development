@@ -175,3 +175,19 @@ const howHigh = (node) => {
 
   return 1 + Math.max(leftPath, rightPath);
 };
+
+//first iteration of solution
+const bottomRightValue = (root) => {
+  let queue = [root];
+  let result = [];
+
+  while (queue.length > 0) {
+    const current = queue.pop();
+    result.push(current.val);
+
+    if (current.left) queue.unshift(current.left);
+    if (current.right) queue.unshift(current.right);
+  }
+
+  return result[result.length - 1];
+};
