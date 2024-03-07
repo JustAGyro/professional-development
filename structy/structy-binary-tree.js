@@ -191,3 +191,5 @@ const bottomRightValue = (root) => {
 
   return result[result.length - 1];
 };
+
+//second solution why am i so dumb lol
