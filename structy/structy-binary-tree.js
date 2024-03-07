@@ -195,17 +195,13 @@ const bottomRightValue = (root) => {
 //second solution why am i so dumb lol
 const bottomRightValue2 = (root) => {
   let queue = [root];
-  let result = [];
 
   while (queue.length > 0) {
     const current = queue.pop();
-    result.push(current.val);
 
     if (current.left) queue.unshift(current.left);
     if (current.right) queue.unshift(current.right);
 
     if (queue.length === 0) return current.val;
   }
-
-  // return result[result.length-1]
 };
