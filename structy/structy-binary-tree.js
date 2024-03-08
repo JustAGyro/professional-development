@@ -205,3 +205,7 @@ const bottomRightValue2 = (root) => {
     if (queue.length === 0) return current.val;
   }
 };
+
+const allTreePaths = (root) => {
+  // todo
+};
