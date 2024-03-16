@@ -217,3 +217,7 @@ const treeLevels = (root) => {
 const levelAverages = (root) => {
   // todo
 };
+
+const leafList = (root) => {
+  // todo
+};
