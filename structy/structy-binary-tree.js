@@ -213,3 +213,7 @@ const allTreePaths = (root) => {
 const treeLevels = (root) => {
   // todo
 };
+
+const levelAverages = (root) => {
+  // todo
+};
