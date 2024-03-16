@@ -209,3 +209,7 @@ const bottomRightValue2 = (root) => {
 const allTreePaths = (root) => {
   // todo
 };
+
+const treeLevels = (root) => {
+  // todo
+};
