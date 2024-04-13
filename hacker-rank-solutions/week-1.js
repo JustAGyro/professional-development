@@ -28,3 +28,7 @@ function plusMinus(arr) {
 function miniMaxSum(arr) {
   // Write your code here
 }
+
+function timeConversion(s) {
+  // Write your code here
+}
