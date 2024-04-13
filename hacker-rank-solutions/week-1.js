@@ -24,3 +24,7 @@ function plusMinus(arr) {
   console.log(nRatio);
   console.log(zRatio);
 }
+
+function miniMaxSum(arr) {
+  // Write your code here
+}
