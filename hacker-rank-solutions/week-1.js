@@ -36,3 +36,7 @@ function timeConversion(s) {
 function breakingRecords(scores) {
   // Write your code here
 }
+
+function processData(input) {
+  //Enter your code here
+}
