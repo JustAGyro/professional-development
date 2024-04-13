@@ -32,3 +32,7 @@ function miniMaxSum(arr) {
 function timeConversion(s) {
   // Write your code here
 }
+
+function breakingRecords(scores) {
+  // Write your code here
+}
