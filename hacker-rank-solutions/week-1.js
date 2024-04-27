@@ -33,10 +33,10 @@ function timeConversion(s) {
   // Write your code here
 }
 
-// function breakingRecords(scores) {
-//   // Write your code here
-// }
+function breakingRecords(scores) {
+  // Write your code here
+}
 
-// function processData(input) {
-//   //Enter your code here
-// }
+function processData(input) {
+  //Enter your code here
+}
