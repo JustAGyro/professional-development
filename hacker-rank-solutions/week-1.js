@@ -29,9 +29,9 @@ function miniMaxSum(arr) {
   // Write your code here
 }
 
-// function timeConversion(s) {
-//   // Write your code here
-// }
+function timeConversion(s) {
+  // Write your code here
+}
 
 // function breakingRecords(scores) {
 //   // Write your code here
